@@ -1,16 +1,16 @@
-package io.quarkus;
+package io.quarkus.Services;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-@Path("/lp2")
+@Path("/hello")
 public class GreetingResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Primer recurso REST LP2";
+        return "Primer recurso REST hello";
     }
 }
